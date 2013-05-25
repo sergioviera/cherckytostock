@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Createdate:</b>
+  <%= @lot.createDate %>
+</p>
+
+<p>
+  <b>Expiredate:</b>
+  <%= @lot.expireDate %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @lot.description %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @lot.amount %>
+</p>
+
+<p>
+  <b>Currentamount:</b>
+  <%= @lot.currentAmount %>
+</p>
+
+<p>
+  <b>Productid:</b>
+  <%= @lot.productId %>
+</p>
+
+
+<%= link_to 'Edit', edit_lot_path(@lot) %> |
+<%= link_to 'Back', lots_path %>

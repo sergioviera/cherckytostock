@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  createDate: 2013-05-25 12:51:55
+  expireDate: 2013-05-25 12:51:55
+  description: MyText
+  amount: 1.5
+  currentAmount: 1.5
+  productId: 1.5
+
+two:
+  createDate: 2013-05-25 12:51:55
+  expireDate: 2013-05-25 12:51:55
+  description: MyText
+  amount: 1.5
+  currentAmount: 1.5
+  productId: 1.5
