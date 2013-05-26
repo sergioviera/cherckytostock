@@ -26,10 +26,6 @@ end
 gem 'jquery-rails'
 
 gem 'sorcery'
-
-gem 'mongo', '1.3.1'
-gem 'bson', '1.3.1'
-gem 'bson_ext', '1.3.1'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
