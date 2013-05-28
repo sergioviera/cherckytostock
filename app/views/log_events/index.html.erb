@@ -1,0 +1,27 @@
+<h1>Listing log_events</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>User</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @log_events.each do |log_event| %>
+  <tr>
+    <td><%= log_event.date %></td>
+    <td><%= log_event.user %></td>
+    <td><%= log_event.description %></td>
+    <td><%= link_to 'Show', log_event %></td>
+    <td><%= link_to 'Edit', edit_log_event_path(log_event) %></td>
+    <td><%= link_to 'Destroy', log_event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Log event', new_log_event_path %>

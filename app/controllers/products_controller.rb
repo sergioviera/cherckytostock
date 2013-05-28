@@ -25,6 +25,7 @@ class ProductsController < ApplicationController
   # GET /products/new.json
   def new
     @product = Product.new
+#    @log_events = @product.log_events.build
 
     respond_to do |format|
       format.html # new.html.erb
@@ -41,6 +42,8 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     @product = Product.new(params[:product])
+    logDesc = 'New Product '+@product.name
+    @product.log_events.build(:user => current_user.id, :date => DateTime.current(), :description => logDesc )
 
     respond_to do |format|
       if @product.save

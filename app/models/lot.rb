@@ -1,3 +1,3 @@
 class Lot < ActiveRecord::Base
-  attr_accessible :amount, :createDate, :currentAmount, :description, :expireDate, :productId
+  attr_accessible :amount, :createDate, :currentAmount, :description, :expireDate
 end

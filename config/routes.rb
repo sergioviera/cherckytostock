@@ -1,14 +1,11 @@
 Cherckytostock::Application.routes.draw do
+  resources :log_events
   resources :lots
-
-
   resources :products
 
 
   get "user_sessions/new"
-
   get "user_sessions/create"
-
   get "user_sessions/destroy"
 
   root :to => 'users#index'

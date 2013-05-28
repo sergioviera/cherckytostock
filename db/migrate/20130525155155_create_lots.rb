@@ -6,7 +6,6 @@ class CreateLots < ActiveRecord::Migration
       t.text :description
       t.float :amount
       t.float :currentAmount
-      t.float :productId
 
       t.timestamps
     end
